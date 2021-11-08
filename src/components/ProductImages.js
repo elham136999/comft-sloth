@@ -13,6 +13,7 @@ const ProductImages = ({ images = [{ url: "" }] }) => {
               src={image.url}
               key={index}
               onClick={() => setmain(images[index])}
+              className={`${image.url === main.url ? "active" : null}`}
             />
           );
         })}
