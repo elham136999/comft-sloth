@@ -24,7 +24,7 @@ const SingleProductPage = () => {
     single_product: product,
     fetchProductSingle,
   } = useProductsContext();
-  console.log(product);
+
   useEffect(() => {
     fetchProductSingle(`${url}${id}`);
   }, [id]);
@@ -36,7 +36,6 @@ const SingleProductPage = () => {
       }, 3000);
     }
   });
-  console.log(product);
 
   if (loading) {
     return <Loading />;
@@ -45,7 +44,7 @@ const SingleProductPage = () => {
   if (error) {
     return <Error />;
   }
-  console.log(product);
+
   const {
     name,
     price,
@@ -57,7 +56,7 @@ const SingleProductPage = () => {
     company,
     images,
   } = product;
-  console.log(product);
+
   return (
     <Wrapper>
       <PageHero title={name} product />
