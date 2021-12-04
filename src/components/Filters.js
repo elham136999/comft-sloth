@@ -124,6 +124,9 @@ const Filters = () => {
               onChange={updateFilters}
               checked={shipping}
             />
+            <button className='clear-btn' type='btn' onClick={clearFilters}>
+              clear filter
+            </button>
           </div>
         </form>
       </div>

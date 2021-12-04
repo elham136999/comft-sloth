@@ -66,6 +66,9 @@ export const FilterProvider = ({ children }) => {
     if (name === "shipping") {
       value = e.target.checked;
     }
+    if (name === "price") {
+      value = Number(value);
+    }
     dispatch({ type: UPDATE_FILTERS, payload: { name, value } });
   };
 
