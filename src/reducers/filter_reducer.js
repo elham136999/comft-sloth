@@ -124,6 +124,7 @@ const filter_reducer = (state, action) => {
   //   }
   //   return { ...state, filtered_products: tempProducts };
   // }
+  //از اینجا نیست
   // if (action.type === UPDATE_FILTERS) {
   //   let { name, value } = action.payload;
   //   return { ...state, filters: { ...state.filters, [name]: value } };
@@ -162,7 +163,7 @@ const filter_reducer = (state, action) => {
   //     });
   //   }
   //   return { ...state, filtered_products: tempProducts };
-  // }
+  // }تا اینجا//
   // if (action.type === CLEAR_FILTERS) {
   //   return {
   //     ...state,
