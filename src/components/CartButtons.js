@@ -7,6 +7,7 @@ import { useCartContext } from "../context/cart_context";
 import { useUserContext } from "../context/user_context";
 
 const CartButtons = () => {
+  const { loginWithRedirect, logout, myUser } = useUserContext();
   return (
     <Wrapper>
       <Link to='/cart' className='cart-btn'>
@@ -16,10 +17,19 @@ const CartButtons = () => {
           <span className='cart-value'>12</span>
         </span>
       </Link>
-      <button type='button' className='auth-btn'>
+      <button type='button' className='auth-btn' onClick={loginWithRedirect}>
         login
         <span>
           <FaUserMinus />
+        </span>
+      </button>
+      <button
+        type='button'
+        className='auth-btn'
+        onClick={() => logout({ returnTo: window.location.origin })}>
+        login
+        <span>
+          <FaUserPlus />
         </span>
       </button>
     </Wrapper>

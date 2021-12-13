@@ -48,7 +48,7 @@ function App() {
         </Route>
       </Switch>
       <Switch>
-        <Route exact path='*'>
+        <Route path='*'>
           <Error />
         </Route>
       </Switch>
