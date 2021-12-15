@@ -25,7 +25,6 @@ ReactDOM.render(
           </CartProvider>
         </FilterProvider>
       </ProductsProvider>
-      <UserProvider />
     </UserProvider>
   </Auth0Provider>,
 

@@ -21,33 +21,27 @@ function App() {
         <Route exact path='/'>
           <Home />
         </Route>
-      </Switch>
-      <Switch>
+
         <Route exact path='/products'>
           <Products />
         </Route>
-      </Switch>
-      <Switch>
+
         <Route exact path='/product/:id'>
           <SingleProduct />
         </Route>
-      </Switch>
-      <Switch>
+
         <Route exact path='/about'>
           <About />
         </Route>
-      </Switch>
-      <Switch>
+
         <Route exact path='/cart'>
           <Cart />
         </Route>
-      </Switch>
-      <Switch>
+
         <Route exact path='/checkout'>
           <Checkout />
         </Route>
-      </Switch>
-      <Switch>
+
         <Route path='*'>
           <Error />
         </Route>
