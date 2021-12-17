@@ -15,8 +15,7 @@ ReactDOM.render(
   <Auth0Provider
     domain='dev--4dg827p.us.auth0.com'
     clientId='9Blmu0iojOY5fr8R1hzyJ5DR73JAD6Op'
-    redirectUri={window.location.origin}
-    cacheLocation='localstrage'>
+    redirectUri={window.location.origin}>
     <UserProvider>
       <ProductsProvider>
         <FilterProvider>
